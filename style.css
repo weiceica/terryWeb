@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=PT+Sans+Caption&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    padding: 0;
+    margin-top: 0;
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: none;
+    box-sizing: border-box;
+    list-style: none;
+  }
+
+body{
+    background: url('./images/space.webp');
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+
+label.TSHI{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-style:bold;
+    color:azure;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+#specialRyy,a:hover{
+    color:azure;
+    transition:0.2s;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-size: 20px;
+    color:antiquewhite;
+}
+
+nav ul li a{
+    color:antiquewhite;
+    font-size: 17px;
+    text-transform:capitalize;
+    text-decoration:dotted;
+    text-shadow:1px;
+}
+
+a.active,a:hover{
+    color:rgb(64, 57, 168);
+    transition:0.4s;
+    text-decoration:underline;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:azure;
+    float: right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display: none;
+}
+
+#ck{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+/*TODO: fix mobile mode*/
+@media (max-width:660px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+        justify-content: center;
+        transition: all 0.2s;
+        left: -100%;
+        top: 80px;
+        text-align: center;
+        padding: 35% 40%;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 0px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: antiquewhite;
+    }
+    #ck:checked ~ul{
+        left: 0;
+    }
+}
+/*end of TODO*/
+
+.container {
+    text-align: center;
+}
+
+.container h1{
+    font-family: 'Itim', cursive;
+    font-size:750%;
+    color:aliceblue;
+    text-align: center;
+    margin-bottom:15px;
+}
+
+.standout_text{
+    color:rgb(182, 122, 32);
+}
+
+.container h2{
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+    color:aliceblue;
+    font-weight:lighter;
+    margin-top:0px;
+}
+
+.container ul{
+    float: center;
+}
+
+.container ul li{
+    display: inline;
+    padding: 0;
+    font-size: 25px;
+    color:aliceblue;
+    margin: 25px;
+}
+
+.titles{
+    font-family: 'Itim', cursive;
+    font-size:300%;
+    color:aliceblue;
+    text-align: center;
+    margin-top:70px;
+    margin-bottom:30px;
+}
+
+.col{
+    display:flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col .project{
+    font-family: 'Itim', cursive;
+    width: 330px;
+    border: 2px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 25px;
+    line-height: 20px;
+    position: relative;
+    box-shadow: 8px 8px lightgrey;
+    font-size: 20px;
+    color:rgb(177, 150, 150);
+}
+
+.col .project h5{
+    font-size: 27px;
+    color:bisque;
+}
+
+.col .project:hover{
+    width: 330px;
+    border: 2px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 25px;
+    line-height: 20px;
+    position: relative;
+    box-shadow: 8px 8px lightgrey;
+    transform: translate3d(0,-6px,0);
+    transition: all .50s cubic-bezier(.33,.70,.70,1);
+}
+
+.about .des {
+    width: 850px;
+    position: center;
+    margin: auto auto;
+}
+
+@media (max-width: 850px){
+    .about .des{
+        width:450px;
+        position: center;
+        margin: autp auto;
+    }
+}
+
+.about .des p{
+    font-family: 'Itim', cursive;
+    justify-content: center;
+    text-align:justify;
+    font-size:25px;
+    color:aliceblue;
+    margin-bottom:15px;
+}
+
+.about .skills{
+    display:flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.about .skills .skill1{
+    font-family: 'Itim', cursive;
+    width: 150px;
+    height: 50px;
+    border: 2px solid gray;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: 25px;
+    position: relative;
+    box-shadow: 8px 8px lightgrey;
+    font-size: 20px;
+    color:rgb(177, 150, 150);
+}
+
+.about .skills .skill1:hover{
+    font-family: 'Itim', cursive;
+    width: 150px;
+    height: 50px;
+    border: 2px solid gray;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: 25px;
+    position: relative;
+    box-shadow: 8px 8px lightgrey;
+    font-size: 20px;
+    color:rgb(177, 150, 150);
+    transform: translate3d(0,-6px,0);
+    transition: all .50s cubic-bezier(.33,.70,.70,1);
+}
