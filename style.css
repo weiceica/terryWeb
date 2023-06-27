@@ -40,6 +40,9 @@ label.TSHI{
     transition:0.2s;
 }
 
+.icons:hover{
+    font-size: 150%;
+}
 nav ul{
     float: right;
     margin-right: 20px;
@@ -193,16 +196,36 @@ a.active,a:hover{
     color:rgb(177, 150, 150);
 }
 
-.col .project a{
-    padding: 20px;
+.col .project .project-box{
+    border: 1px solid LIGHTGREY;
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 10px;
     font-size: 20px;
     color:aquamarine;
+}
+
+.col .project .project-box .proj-text {
+    margin: 5%;
+}
+
+.col .project .project-box .demo-img {
+    height: 100%;
+    width: 100%;
+}
+.col .project .project-box .demo-img:hover{
+    opacity: 0.7;
 }
 
 .col .project h5{
     font-size: 27px;
     color:bisque;
 }
+
+.col .project .project-box a:hover{
+    font-size: 130%;
+}
+
 
 .col .project:hover{
     width: 330px;
@@ -227,7 +250,7 @@ a.active,a:hover{
     .about .des{
         width:450px;
         position: center;
-        margin: autp auto;
+        margin: auto auto;
     }
 }
 
@@ -279,4 +302,22 @@ a.active,a:hover{
     color:rgb(177, 150, 150);
     transform: translate3d(0,-6px,0);
     transition: all .50s cubic-bezier(.33,.70,.70,1);
+}
+
+.red-link{
+    color:red;
+}
+
+.red-link:hover{
+    color:rgb(207, 97, 97);
+    font-size: 120%;
+}
+
+.green-link{
+    color:rgb(14, 198, 14);
+}
+
+.green-link:hover{
+    color:rgb(63, 224, 109);
+    font-size: 120%;
 }
